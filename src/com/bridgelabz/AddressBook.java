@@ -1,11 +1,14 @@
 package com.bridgelabz;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
 
 public class AddressBook {
-
+    static final String filePath = "/Users/admin/Documents/Java Fellowship Program/Day27/src/com/bridgelabz/contact.txt";
     ArrayList<Contact> contacts = new ArrayList<>();
     private String addressBookName;
 
@@ -92,6 +95,17 @@ public class AddressBook {
             }
         }
         return isFound;
+    }
+
+    public void writeArrayListToTextFile(ArrayList<AddressBook> addressBooks) throws IOException {
+        try {
+            StringBuffer sb = new StringBuffer();
+            sb.append(addressBooks);
+            Files.write(Path.of(filePath),sb.toString().getBytes());
+        }
+        catch (IOException e){
+            System.out.println(e);
+        }
     }
 
     @Override
