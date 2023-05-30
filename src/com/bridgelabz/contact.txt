@@ -1,0 +1,4 @@
+[AddressBook{addressBookName='ab1', contacts=[Contact{firstName='sri', lastName='ram', city='ba', State='kar', zip=23232, phoneNumber=23232323, email='sr'}
+, Contact{firstName='mo', lastName='raj', city='el', State='tam', zip=23, phoneNumber=2323, email='mr'}
+]}, AddressBook{addressBookName='ab2', contacts=[Contact{firstName='br', lastName='an', city='hy', State='tel', zip=23, phoneNumber=232323, email='br'}
+]}]

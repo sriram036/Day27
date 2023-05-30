@@ -79,6 +79,7 @@ public class Contact {
                 ", zip=" + zip +
                 ", phoneNumber=" + phoneNumber +
                 ", email='" + email + '\'' +
-                '}';
+                '}' +
+                "\n";
     }
 }
